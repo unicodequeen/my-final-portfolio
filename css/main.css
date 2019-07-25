@@ -97,49 +97,6 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-   /* Image Text Hover Effect style */
-   .hvrbox {
-    position: relative;
-    width: 100%;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background: rgba(0, 0, 0, 0.6);
-  }
-  
-  .hvrbox:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-/*************End Image Hover Text Effect ****************/ 
   
   /* General Styles */
    
@@ -166,8 +123,7 @@
       width: 100%;
   }
   
-  
-  /* Header Styles */
+  /* -------------------- Base Header - Footer Styles -------------------- */
   
   header h1 {
     font-family: 'Montserrat';
@@ -236,29 +192,126 @@
     color: #333333;
     font-size: 22px;
   }
+
+    /* I have hidden the menu so that it’s not visible by default */
   
-  /* I have hidden the menu so that it’s not visible by default */
+    .main-nav {
+      list-style-type: none;
+      display: none;
+    }
+    
+    .active {
+      display: block;
+    }
+
+/* Footer Styles */
   
-  .main-nav {
-    list-style-type: none;
-    display: none;
+    footer h4 {
+      font-size: 10px;
+      font-weight:400;
+    }
+  
+    footer {
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+/* -------------------- Mobile Styles - Homepage -------------------- */
+  
+   /* Image Text Hover Effect style */
+   .hvrbox {
+    position: relative;
+    width: 100%;
   }
   
-  .active {
+  .image {
     display: block;
+    width: 100%;
+    height: auto;
   }
-  /* Footer Styles */
   
-  footer h4 {
-    font-size: 10px;
-    font-weight:400;
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hvrbox:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 
-  footer {
+/*End Image Hover Text Effect */ 
+
+/* ==========================================================================
+   Baja Fresh Page - Mobile Styles
+   ========================================================================== */
+   .content-wrapper{
+    width:90%;
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-flow:row wrap;
   }
+  
+  
+  .content-wrapper h2,h3,p {
+    padding: 20px 0;
+  }
+  
+  h3{
+    font-weight:500;
+  }
+  
+  section .content-wrapper {
+     
+    width:100%; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom: 20px;
+  }
+  
+  input[type=button] {
+    width: 300px;
+    padding: 20px 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #00bac7;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+/* ==========================================================================
+   FAQ Page - Mobile Styles
+   ========================================================================== */
+
+
   
   
   /* ==========================================================================
@@ -366,7 +419,10 @@
         text-align: center;
       }
      }
-
+ /* ==========================================================================
+   Baja Fresh Page - Tablet Styles
+   ========================================================================== */
+    
      @media screen and (min-width: 1024px) {
       
       .top-section  {
