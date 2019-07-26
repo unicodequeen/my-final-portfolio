@@ -109,6 +109,7 @@
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
+    line-height:30px;
     text-align: left;
   }
   
@@ -256,6 +257,7 @@
     color: white;
     font-size: 20px;
     font-weight: 600;
+    line-height:50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -317,7 +319,19 @@
 /* ==========================================================================
    City Cycles - Mobile Styles
    ========================================================================== */
+   #bullet-group-1,#bullet-group-2 {
+    margin:0 20px;
+  }
+  
+  #bullet-group-2 {
+    margin:0 0 0 40px;
+    padding-right:20px
+  }
 
+  .solution li{
+    padding-bottom: 10px;
+  }
+  
 
   
   
