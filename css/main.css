@@ -266,6 +266,7 @@
    Baja Fresh Page - Mobile Styles
    ========================================================================== */
    .content-wrapper{
+    max-width:1000px;
     width:90%;
     display:flex;
     justify-content:center;
@@ -685,5 +686,3 @@
     }
   }
   
-  /* Testing changes for Github practice*/
-  /*here is the second test change*/
