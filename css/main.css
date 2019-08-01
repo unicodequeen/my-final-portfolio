@@ -124,6 +124,7 @@
   .main-image img {
       width: 100%;
   }
+
   
   /* -------------------- Base Header - Footer Styles -------------------- */
   
@@ -331,9 +332,16 @@
   .solution li{
     padding-bottom: 10px;
   }
-  
 
-  
+  .hi-fi-images img {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-flow:row wrap;
+    width:100%;
+    margin-bottom:50px;
+}
+
   
   /* ==========================================================================
      Helper classes
